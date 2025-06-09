@@ -1,0 +1,25 @@
+headless: True
+base_url: "https://some-base-url.com/"
+viewport:
+  width:
+  height:
+timeout:
+configuration:
+  username:
+  password: ""
+  client_id : ''
+  customer_id :
+  x_customer_id: ''
+  client_secret : ''
+  token_url : 'https://sso.[env].link.t2systems.com/auth/realms/Link/protocol/openid-connect/token'
+  api_base_url: 'https://some-base-url.com/'
+zephyr:
+  secret_key:
+  access_key:
+  jira_url: 'https://t2systems.atlassian.net/'
+  zephyr_base_url: 'https://prod-api.zephyr4jiracloud.com/connect'
+  zephyr_api_path: '/public/rest/api/1.0/'
+  project_key: ''
+  project_id: ''
+  account_id: ''
+  version_id:

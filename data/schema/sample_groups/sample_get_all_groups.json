@@ -1,0 +1,200 @@
+{
+    "type": "object",
+    "required": [
+        "response",
+        "status"
+    ],
+    "properties": {
+        "response": {
+            "type": "object",
+            "required": [
+                "content",
+                "pageable",
+                "totalPages",
+                "totalElements",
+                "last",
+                "numberOfElements",
+                "first",
+                "number",
+                "size",
+                "sort",
+                "empty"
+            ],
+            "properties": {
+                "content": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "required": [
+                            "customerId",
+                            "uuid",
+                            "name",
+                            "description",
+                            "classifications",
+                            "customGroups",
+                            "isActive",
+                            "isDeleted"
+                        ],
+                        "properties": {
+                            "customerId": {
+                                "type": "integer"
+                            },
+                            "uuid": {
+                                "type": "string"
+                            },
+                            "name": {
+                                "type": "string"
+                            },
+                            "description": {
+                                "type": "string"
+                            },
+                            "classifications": {
+                                "type": "array",
+                                "items": {
+                                    "type": "object",
+                                    "required": [
+                                        "classificationUid",
+                                        "subclassificationUid",
+                                        "classificationLabel",
+                                        "verificationFieldUid",
+                                        "verificationFieldLabel"
+                                    ],
+                                    "properties": {
+                                        "classificationUid": {
+                                            "type": "integer"
+                                        },
+                                        "subclassificationUid": {
+                                            "type": "integer"
+                                        },
+                                        "classificationLabel": {
+                                            "type": "string"
+                                        },
+                                        "verificationFieldUid": {
+                                            "type": "integer"
+                                        },
+                                        "verificationFieldLabel": {
+                                            "type": "string"
+                                        }
+                                    }
+                                }
+                            },
+                            "customGroups": {
+                                "type": "array",
+                                "items": {
+                                    "type": "string"
+                                }
+                            },
+                            "isActive": {
+                                "type": "boolean"
+                            },
+                            "isDeleted": {
+                                "type": "boolean"
+                            }
+                        }
+                    }
+                },
+                "pageable": {
+                    "type": "object",
+                    "required": [
+                        "sort",
+                        "pageSize",
+                        "pageNumber",
+                        "offset",
+                        "paged",
+                        "unpaged"
+                    ],
+                    "properties": {
+                        "sort": {
+                            "type": "object",
+                            "required": [
+                                "sorted",
+                                "unsorted",
+                                "empty"
+                            ],
+                            "properties": {
+                                "sorted": {
+                                    "type": "boolean"
+                                },
+                                "unsorted": {
+                                    "type": "boolean"
+                                },
+                                "empty": {
+                                    "type": "boolean"
+                                }
+                            }
+                        },
+                        "pageSize": {
+                            "type": "integer"
+                        },
+                        "pageNumber": {
+                            "type": "integer"
+                        },
+                        "offset": {
+                            "type": "integer"
+                        },
+                        "paged": {
+                            "type": "boolean"
+                        },
+                        "unpaged": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "totalPages": {
+                    "type": "integer"
+                },
+                "totalElements": {
+                    "type": "integer"
+                },
+                "last": {
+                    "type": "boolean"
+                },
+                "numberOfElements": {
+                    "type": "integer"
+                },
+                "first": {
+                    "type": "boolean"
+                },
+                "number": {
+                    "type": "integer"
+                },
+                "size": {
+                    "type": "integer"
+                },
+                "sort": {
+                    "type": "object",
+                    "required": [
+                        "sorted",
+                        "unsorted",
+                        "empty"
+                    ],
+                    "properties": {
+                        "sorted": {
+                            "type": "boolean"
+                        },
+                        "unsorted": {
+                            "type": "boolean"
+                        },
+                        "empty": {
+                            "type": "boolean"
+                        }
+                    }
+                },
+                "empty": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "status": {
+            "type": "object",
+            "required": [
+                "responseStatus"
+            ],
+            "properties": {
+                "responseStatus": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
